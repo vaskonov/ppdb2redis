@@ -19,7 +19,7 @@ Tested on Redis 2.4.15
 
 redis.conf is an example of redis config file
 
-USAGE: ruby ppdb2redis.rb -ppdbfile | redis/redis-cli -p [POST] -n [REDISDB] --pipe
+USAGE: ruby ppdb2redis.rb -ppdbfile | redis/redis-cli -p [POST] -n [REDISDB] --pipe  --pipe-timeout 0
 
 USAGE with screen:
 
@@ -27,7 +27,7 @@ Create a session:
 
     screen
 
-    ruby ppdb2redis.rb -ppdbfile | redis/redis-cli -p [POST] -n [REDISDB] --pipe
+    ruby ppdb2redis.rb -ppdbfile | redis/redis-cli -p [POST] -n [REDISDB] --pipe  --pipe-timeout 0
 
     [close the session]
 
