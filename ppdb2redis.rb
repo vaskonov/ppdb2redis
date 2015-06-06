@@ -31,7 +31,7 @@ count = 0
 filename = ARGV[1]
 filename = ARGV[2]
 
-file = File.new("", "r")
+file = File.new("ppdb-1.0-xl-all", "r")
 #file = File.new("ppdb", "r")
 while (line = file.gets)
     parammain = {}
